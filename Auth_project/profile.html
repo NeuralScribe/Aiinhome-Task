@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Profile Page</title>
+    <link rel="stylesheet" href="profile.css" />
+  </head>
+  <body onload="checkIfLoggedInOrNot()">
+    <div class="profile-container">
+      <div class="profile-header">
+        <img
+          src="https://via.placeholder.com/100"
+          alt="Profile Picture"
+          id="profile_image"
+          class="profile-img"
+        />
+        <h2 class="profile-name" id="full_name">John Doe</h2>
+        <p id="email-value" class="profile-email">johndoe@example.com</p>
+      </div>
+
+      <div class="profile-details">
+        <div class="profile-item">
+          <span class="label">Username:</span>
+          <span id="username-value" class="value">johndoe123</span>
+        </div>
+        <div class="profile-item">
+          <span class="label">Gender:</span>
+          <span id="gender-value" class="value">Male</span>
+        </div>
+        <div class="profile-item">
+          <span class="label">Age:</span>
+          <span id="age-value" class="value">12</span>
+        </div>
+      </div>
+
+      <button onclick="doLogout()" class="edit-btn">Logout</button>
+    </div>
+    <script src="profile.js"></script>
+  </body>
+</html>
